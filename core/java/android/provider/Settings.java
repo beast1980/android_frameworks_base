@@ -2357,11 +2357,20 @@ public final class Settings {
          * Show touch positions on screen?
          * 0 = no
          * 1 = yes
-         * @hide
+ * @hide
          */
         public static final String SHOW_TOUCHES = "show_touches";
 
         /**
+
+        /**
+         * Network stats Color style
+         * @hide
+         */
+        public static final String STATUS_BAR_NETWORK_COLOR = "status_bar_network_usage_color"; 
+	
+/**
+        
          * Log raw orientation data from {@link WindowOrientationListener} for use with the
          * orientationplot.py tool.
          * 0 = no
