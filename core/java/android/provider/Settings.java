@@ -2345,6 +2345,19 @@ public final class Settings {
          */
         public static final String STATUS_BAR_NETWORK_STATS_UPDATE_INTERVAL = "status_bar_network_stats_update_frequency";
 
+ 	/**
+         * Network stats Color style
+         * @hide
+         */
+        public static final String STATUS_BAR_NETWORK_COLOR = "status_bar_network_usage_color"; 
+	
+         /**
+         * Network stats hide if there's no traffic
+         * @hide
+         */
+
+        public static final String STATUS_BAR_NETWORK_HIDE = "status_bar_network_hide"; 
+
         /**
          * Show pointer location on screen?
          * 0 = no
@@ -2362,14 +2375,6 @@ public final class Settings {
         public static final String SHOW_TOUCHES = "show_touches";
 
         /**
-
-        /**
-         * Network stats Color style
-         * @hide
-         */
-        public static final String STATUS_BAR_NETWORK_COLOR = "status_bar_network_usage_color"; 
-	
-/**
         
          * Log raw orientation data from {@link WindowOrientationListener} for use with the
          * orientationplot.py tool.
