@@ -361,6 +361,14 @@ class QuickSettings {
                         }
                     });
 
+                    userTile.setOnLongClickListener(new View.OnLongClickListener() {
+                        @Override
+                        public boolean onLongClick(View v) {
+                            startSettingsActivity(android.provider.Settings.ACTION_SYNC_SETTINGS);
+                            return true;
+                        }
+                    });
+
                     mModel.addUserTile(userTile, new QuickSettingsModel.RefreshCallback() {
                         @Override
                         public void refreshView(QuickSettingsTileView view, State state) {
@@ -442,7 +450,8 @@ class QuickSettings {
                         public boolean onLongClick(View v) {
                             startSettingsActivity(android.provider.Settings.ACTION_WIFI_SETTINGS);
                             return true;
-                        }} );
+                        }
+                    });
 
                     mModel.addWifiTile(wifiTile, new NetworkActivityCallback() {
                         @Override
@@ -522,6 +531,15 @@ class QuickSettings {
                                 mRotationLockController.setRotationLocked(!locked);
                             }
                         });
+
+                        rotationLockTile.setOnLongClickListener(new View.OnLongClickListener() {
+                            @Override
+                            public boolean onLongClick(View v) {
+                                startSettingsActivity(android.provider.Settings.ACTION_ACCESSIBILITY_SETTINGS);
+                                return true;
+                            }
+                        });
+
                         mModel.addRotationLockTile(rotationLockTile, mRotationLockController,
                                 new QuickSettingsModel.RefreshCallback() {
                                     @Override
@@ -628,7 +646,8 @@ class QuickSettings {
                                 startSettingsActivity(
                                         android.provider.Settings.ACTION_BLUETOOTH_SETTINGS);
                                 return true;
-                            }});
+                            }
+                        });
 
                         mModel.addBluetoothTile(bluetoothTile,
                                 new QuickSettingsModel.RefreshCallback() {
@@ -674,7 +693,8 @@ class QuickSettings {
                             startSettingsActivity(
                                     android.provider.Settings.ACTION_LOCATION_SOURCE_SETTINGS);
                             return true; // Consume click
-                        }} );
+                        }
+                    });
 
                     mModel.addLocationTile(locationTile,
                             new QuickSettingsModel.BasicRefreshCallback(locationTile));
