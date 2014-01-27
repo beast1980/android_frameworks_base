@@ -2644,16 +2644,8 @@ public final class Settings {
 
         /**
         
-
-         * Whether flip action during incomming call should mute or dismiss
-         * the call (mute = 0, dismiss = 1, nothing = 2 (default))
-         *
-         * @hide
-         */
-        public static final String CALL_FLIP_ACTION_KEY = "call_flip_action_key";
-
-        /**
          * Custom navring actions
+         *
          * @hide
          */
         public static final String[] NAVIGATION_RING_TARGETS = new String[] {
