@@ -120,7 +120,6 @@ class QuickSettings {
     private BluetoothState mBluetoothState;
     private BluetoothAdapter mBluetoothAdapter;
     private WifiManager mWifiManager;
-    private ConnectivityManager mConnectivityManager;
 
     private BluetoothController mBluetoothController;
     private RotationLockController mRotationLockController;

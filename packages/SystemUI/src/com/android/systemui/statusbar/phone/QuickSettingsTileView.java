@@ -52,6 +52,7 @@ class QuickSettingsTileView extends FrameLayout {
 
     private int mContentLayoutId;
     private int mColSpan;
+    private int mRowSpan;
     private boolean mPrepared;
     private OnPrepareListener mOnPrepareListener;
 
